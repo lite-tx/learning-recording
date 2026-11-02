@@ -1,3 +1,5 @@
+> **历史版本：** 本稿已由 [Recording 设计 v0.3](recording-design-v0.3.md) 取代。保留本文件用于查看设计变化，不再作为当前设计依据。
+
 # Recording 设计 v0.2
 
 ## 想留下什么
