@@ -30,6 +30,7 @@
 
 - [目前的思想底稿](docs/thesis-v0.md)
 - [Learning 与 Recording 的最小 Skill 设计稿](docs/skills-design-v0.1.md)
+- [Learning Skill 第一版草稿](skills/learning/SKILL.md)
 - [之前的学习案例](docs/case-studies.md)
 - [实际测试的记录](docs/experiments.md)
 - [研究资料](research/reading-list.md)
