@@ -34,6 +34,7 @@
 - [Learning Skill 第一版草稿（中文）](skills/learning/SKILL.md)
 - [Learning 正反案例（按需参考）](skills/learning/references/examples.md)
 - [插件架构设计](docs/plugin-architecture-v0.1.md)
+- [Recording 行为映射](docs/recording-behavior-mapping-v0.1.md)
 - [之前的学习案例](docs/case-studies.md)
 - [实际测试的记录](docs/experiments.md)
 - [研究资料](research/reading-list.md)
