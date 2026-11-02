@@ -134,3 +134,10 @@
 - 重写 `skills/recording/SKILL.md`，采用与 Learning 相近的清晰、直接的指令语言；用真实日记样本呈现个人文风，不要求 Skill 正文模仿日记。
 - 重写 `references/examples.md`，保留 453、3841 的真实第一人称日记片段，并说明样本应如何用于写作参考。
 - 更新 Recording v0.3 中关于 Skill 文风的设计说明，明确指令文本与生成内容的文风分工。
+
+## Learning & Recording 职责边界审查（2026-11-02）
+
+- 完成两个 Skill 的职责审查：Learning 负责学习进行中的协作；Recording 在用户主动调用后回顾已发生的学习过程并整理记录。
+- 明确相似内容不代表职责冲突：Learning 实时使用理解变化和主线信息推进学习；Recording 事后选择其中有助于未来重新理解的部分。
+- 明确不增加固定交接报告，不要求 Learning 自动总结，不让 Recording 重复实现 Memory、历史检索或 Notion 存储。
+- 新增 `docs/skill-boundary-review-v0.1.md` 作为审查记录；目前不需要修改两个 Skill 的核心指令。
