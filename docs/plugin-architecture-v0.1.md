@@ -76,3 +76,7 @@ learning-recording/
 3. 打包为一个 skills-only plugin 并安装。
 4. 在 ChatGPT Chat 中测试两个 Skill 的显式调用及 Notion 工具协作。
 5. 根据真实表现讨论修改，不做每次使用后的强制评估。
+
+## 职责边界审查
+
+当前两个 Skill 的职责边界已经完成第一轮审查，详见 [Learning & Recording 职责边界审查](skill-boundary-review-v0.1.md)。目前没有发现需要修改 Learning 核心指令的冲突；两者共享同一对话上下文，但分别负责学习进行中的协作与学习之后的记录。下一步检查独立调用和插件配置。
