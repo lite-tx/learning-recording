@@ -141,3 +141,10 @@
 - 明确相似内容不代表职责冲突：Learning 实时使用理解变化和主线信息推进学习；Recording 事后选择其中有助于未来重新理解的部分。
 - 明确不增加固定交接报告，不要求 Learning 自动总结，不让 Recording 重复实现 Memory、历史检索或 Notion 存储。
 - 新增 `docs/skill-boundary-review-v0.1.md` 作为审查记录；目前不需要修改两个 Skill 的核心指令。
+
+## Learning & Recording 独立使用审查（2026-11-02）
+
+- 检查只使用 Learning、只使用 Recording、同一对话先后调用，以及只保存代码或结论四种场景。
+- 确认两个 Skill 的目录、核心指令和独立显式调用配置没有相互依赖；Recording 在跨对话整理时仍要求使用实际可访问的材料，不假设能读取完整历史。
+- 新增 `docs/independent-use-review-v0.1.md`，并更新 README、插件架构和项目进度。
+- 审查仅覆盖设计和文件配置；ChatGPT 安装后的真实调用与切换体验仍需打包后验证。
