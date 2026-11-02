@@ -68,3 +68,9 @@
 - 将 Skill 核心指令与正反案例分离，案例文件按核心原则标题组织，供按需参考。
 - 添加 `skills/learning/agents/openai.yaml`，设置 `allow_implicit_invocation: false`，用于显式调用测试。
 - 准备可上传 ChatGPT Skills 的 ZIP 包；该包用于测试当前草稿，不代表插件已发布。
+
+## 插件架构选择（2026-11-02）
+
+- 决定先完成一个包含 Learning 与 Recording 两个 Skill 的轻量 Plugin，再在 ChatGPT Chat 中测试；不再以独立 Skill 上传测试作为当前验收方式。
+- 初期采用 skills-only Plugin，不自建 MCP Server；Notion、Write Like Me 等现有能力按需复用。
+- 记录独立 Skill 测试的限制：未确认实际调用成功，因此不作为 Learning 行为测试结果。
