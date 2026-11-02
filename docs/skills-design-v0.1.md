@@ -35,13 +35,10 @@
 
 ## 当前实现进度
 
-- Learning 的原则已整理为中文 `SKILL.md` 初稿。
-- `docs/learning-behavior-mapping-v0.1.md` 是设计过程中的行为映射，用来检查思想如何转成具体行为，不需要在每次 Skill 调用时加载。
-- `skills/learning/references/examples.md` 保存与 L1–L5 一一对应的正反案例，供遇到歧义时按需查阅。
-- Recording 的设计原则已完成第一轮审查，尚未编写正式 Skill。
-
-后续根据真实使用中出现的具体问题修改，不为了覆盖所有理论而提前增加规则。
-
+- Learning 的原则已整理为中文 `SKILL.md` 初稿，并建立独立的行为映射和按需加载案例。
+- Recording 的主要原则已完成第一轮审查，现已建立 [Recording 行为映射](recording-behavior-mapping-v0.1.md)，用于把记录原则转换为具体情境和行为。
+- Notion 中的「算法日记｜写作风格与工作流规则」是用户创建的临时草稿，不是正式规范；正式 Recording 规则完成迁移后，再按用户计划移除。
+- 下一步根据行为映射编写 Recording 的中文 `SKILL.md`，再整理配套案例。
 ### 来历
 
 根据 [思想底稿](thesis-v0.md)、[真实案例](case-studies.md) 和 [设计实验记录](experiments.md) 整理。历史案例只提供初步经验，不能当成正式效果证明。
