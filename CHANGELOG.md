@@ -148,3 +148,10 @@
 - 确认两个 Skill 的目录、核心指令和独立显式调用配置没有相互依赖；Recording 在跨对话整理时仍要求使用实际可访问的材料，不假设能读取完整历史。
 - 新增 `docs/independent-use-review-v0.1.md`，并更新 README、插件架构和项目进度。
 - 审查仅覆盖设计和文件配置；ChatGPT 安装后的真实调用与切换体验仍需打包后验证。
+
+## Learning & Recording 插件包 v0.1.0（2026-11-02）
+
+- 新增根目录 `plugin.json`，使用 Agent Plugins 1.0 清单格式，插件名 `learning-recording`，版本 `0.1.0`，分类 `Education & Research`。
+- 将 Learning 与 Recording 两个 Skill、各自的 `agents/openai.yaml` 和 `references/examples.md` 整合为一个 skills-only 插件包；不包含 MCP Server 或外部 App 绑定。
+- 生成 ZIP 并检查清单 JSON、显示名称和副标题长度、分类、默认提示、Skill frontmatter、显式调用配置、引用文件路径、归档完整性及文件清单。
+- 当前未完成 ChatGPT 账户保存和安装；ZIP 生成不代表插件已安装或运行。
