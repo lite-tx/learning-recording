@@ -1,0 +1,6 @@
+interface:
+  display_name: "Recording"
+  short_description: "整理真实的学习过程与个人记录"
+  default_prompt: "请使用 Recording 帮我整理这次学习过程。"
+policy:
+  allow_implicit_invocation: false
