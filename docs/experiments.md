@@ -40,3 +40,11 @@
 - 在另一领域使用 v0 思想，观察能否自然建立推导桥梁。
 - 比较一段足够详细但重点清晰的解释与过度压缩后的解释。
 - Recording 在新的真实学习场景中继续使用，遇到具体文风或内容问题时再修正。
+
+## 试验 005 — 独立 Skill 导入与 ChatGPT Chat 调用确认
+
+- **原测试方式**：将 Learning 的独立 Skill ZIP 上传后，在新对话中测试 False Sharing。
+- **实际情况**：用户使用 ChatGPT Chat，但没有确认输入时是否通过 `@Learning` 成功选择 Skill；用户随后发现当前界面似乎只能使用插件，无法直接使用独立 Skill。
+- **结论**：这次回答不能作为 Skill 已被调用的证据，因此不用于判断 Learning 指令是否有效。
+- **产品边界核对**：OpenAI 当前文档区分独立 Skill 与插件内 Skill。独立 Skill 的可用性受账户资格和产品界面影响；插件内 Skill 可在支持的 ChatGPT Chat / Work 界面使用。具体能力仍取决于账户、工作区和平台。
+- **后续调整**：先完成包含 Learning 与 Recording 两个 Skill 的 skills-only Plugin，再在安装后的 ChatGPT Chat 中进行显式调用测试。
