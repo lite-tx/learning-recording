@@ -31,7 +31,8 @@
 - Notion 中的「算法日记｜写作风格与工作流规则」是用户创建的临时草稿，不是正式规范；正式 Recording 规则完成迁移后，再按用户计划移除。
 - Recording 已根据行为映射建立中文 `SKILL.md` 初稿，并将具体正反案例放入独立的 `references/examples.md`，供按需读取。
 - Learning 与 Recording 的职责边界和独立使用场景已完成设计审查，详见[职责边界审查](skill-boundary-review-v0.1.md)和[独立使用审查](independent-use-review-v0.1.md)。下一步进入插件整合与打包检查。
-- 当前两份 Skill 均为待整合和实际使用验证的草稿，尚未打包或发布插件。
+- 已新增根目录 [plugin.json](../plugin.json)，并生成 `learning-recording-v0.1.0.zip`；ZIP 通过基础结构和引用检查。
+- ZIP 尚未保存到 ChatGPT 账户，也未完成安装和实际调用验证。
 ### 来历
 
 根据 [思想底稿](thesis-v0.md)、[真实案例](case-studies.md) 和 [设计实验记录](experiments.md) 整理。历史案例只提供初步经验，不能当成正式效果证明。
