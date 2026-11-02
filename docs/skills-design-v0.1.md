@@ -27,9 +27,10 @@
 ## 当前实现进度
 
 - Learning 的原则已整理为中文 `SKILL.md` 初稿，并建立独立的行为映射和按需加载案例。
-- Recording 已重新整理为 [设计 v0.2](recording-design-v0.2.md)，以保留思考来路、个人笔记表达、如实呈现理解变化和按需保存成果为主要内容。
+- Recording 当前设计以 [设计 v0.3](recording-design-v0.3.md) 为准，核心 Skill 采用清晰直接的指令语言，真实日记样本单独放在 references 中。
 - Notion 中的「算法日记｜写作风格与工作流规则」是用户创建的临时草稿，不是正式规范；正式 Recording 规则完成迁移后，再按用户计划移除。
 - Recording 已根据行为映射建立中文 `SKILL.md` 初稿，并将具体正反案例放入独立的 `references/examples.md`，供按需读取。
+- Learning 与 Recording 的职责边界已完成第一轮审查，详见 [审查记录](skill-boundary-review-v0.1.md)。下一步检查两个 Skill 的独立调用和插件配置。
 - 当前两份 Skill 均为待整合和实际使用验证的草稿，尚未打包或发布插件。
 ### 来历
 
