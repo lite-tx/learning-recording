@@ -1,6 +1,6 @@
 # Learning & Recording 插件架构 v0.1
 
-> 当前方案：先做一个只包含两个 Skill 的轻量插件，在 ChatGPT Chat 中验证实际调用。本文记录架构选择，不代表插件已经打包或安装。
+> 当前方案：一个只包含 Learning 与 Recording 两个 Skill 的轻量插件。v0.1.0 清单和 ZIP 已准备，尚未保存到 ChatGPT 账户或完成安装验证。
 
 ## 为什么选择 Plugin
 
@@ -63,11 +63,14 @@ learning-recording/
 
 ## 打包与验证
 
+- 根目录使用 Agent Plugins 1.0 的 `plugin.json`；插件名为 `learning-recording`，版本为 `0.1.0`，分类为 `Education & Research`。
 - 一个插件包含两个 Skill，目录名和 Skill frontmatter 保持一致。
-- 核心指令放在各自的 `SKILL.md`；较长的正反案例放在对应 `references/`，按需读取。
-- 在插件配置中关闭隐式调用，两个 Skill 都由用户主动选择。
-- 插件安装后分别测试 Learning 与 Recording，并检查实际调用、外部工具权限和写入结果。
-- 测试通过前不称为正式版本；GitHub 是源文件和版本历史的唯一事实来源。
+- 核心指令放在各自的 `SKILL.md`；案例放在对应 `references/`，按需读取。
+- 两个 Skill 的 `agents/openai.yaml` 都设置 `allow_implicit_invocation: false`，由用户主动选择。
+- 初版不包含 MCP Server、外部 App 绑定或自建服务；Notion 等工具由用户在 ChatGPT 中另行连接。
+- 已生成 ZIP 并检查清单、目录层级、Skill frontmatter、引用文件和压缩包完整性。
+- 当前环境没有提供将该 ZIP 直接保存为账户插件的创建入口，因此账户保存与安装仍待完成；不能把 ZIP 生成视为插件已经安装。
+- 安装后分别测试 Learning 与 Recording，并检查实际调用、外部工具权限和写入结果。测试通过前不称为正式版本；GitHub 是源文件和版本历史的唯一事实来源。
 
 ## 版本推进
 
