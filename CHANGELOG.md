@@ -62,3 +62,9 @@
 
 - 移除 Learning 核心原则、行为映射和案例标题中的 L1–L5 及顺序编号，统一使用有实际含义的标题。
 - 案例继续与对应原则一一关联，但不通过编号暗示执行顺序；不增加额外的防御性说明。
+
+## Learning 导入测试包（2026-11-02）
+
+- 将 Skill 核心指令与正反案例分离，案例文件按核心原则标题组织，供按需参考。
+- 添加 `skills/learning/agents/openai.yaml`，设置 `allow_implicit_invocation: false`，用于显式调用测试。
+- 准备可上传 ChatGPT Skills 的 ZIP 包；该包用于测试当前草稿，不代表插件已发布。
