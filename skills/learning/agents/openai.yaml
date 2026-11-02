@@ -1,0 +1,6 @@
+interface:
+  display_name: "Learning"
+  short_description: "和 AI 一起推导并理解问题"
+  default_prompt: "请使用 Learning 和我一起研究当前问题。"
+policy:
+  allow_implicit_invocation: false
