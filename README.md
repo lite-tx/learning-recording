@@ -34,6 +34,7 @@
 - [Learning Skill 第一版草稿（中文）](skills/learning/SKILL.md)
 - [Learning 正反案例（按需参考）](skills/learning/references/examples.md)
 - [插件架构设计](docs/plugin-architecture-v0.1.md)
+- [插件清单 plugin.json](plugin.json)
 - [Learning & Recording 职责边界审查](docs/skill-boundary-review-v0.1.md)
 - [Learning & Recording 独立使用审查](docs/independent-use-review-v0.1.md)
 - [Recording 设计 v0.3（当前讨论稿）](docs/recording-design-v0.3.md)
