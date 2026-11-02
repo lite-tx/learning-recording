@@ -81,3 +81,12 @@
 - 覆盖思维变化提取、客观记录、正文与附属资料、个人文风、保存位置、反馈迭代和不预设固定模板等行为。
 - 明确 Notion「算法日记｜写作风格与工作流规则」为临时草稿，不作为正式规范；正式规则迁移后再按用户计划移除。
 - 真实文风样本以现有日记和可访问的对话为主，Writing Style 不作为必要依赖。
+
+## Recording Skill 第一版草稿（2026-11-02）
+
+- 根据 Recording 行为映射新增 `skills/recording/SKILL.md` 中文初稿。
+- 新增 `skills/recording/references/examples.md`，使用 453、3841、3970 等真实日记与对话作为正反案例，并与核心原则标题对应。
+- 新增 `skills/recording/agents/openai.yaml`，关闭隐式调用，要求用户主动调用。
+- 明确以真实 Notion 日记和可用对话作为文风样本；Writing Style 不作为必要依赖。
+- 明确 Notion「算法日记｜写作风格与工作流规则」为临时草稿，不作为正式规范；不擅自删除。
+- 当前 Recording 仍是待整合和验证的初稿，尚未打包或发布插件。
