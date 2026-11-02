@@ -74,3 +74,10 @@
 - 决定先完成一个包含 Learning 与 Recording 两个 Skill 的轻量 Plugin，再在 ChatGPT Chat 中测试；不再以独立 Skill 上传测试作为当前验收方式。
 - 初期采用 skills-only Plugin，不自建 MCP Server；Notion、Write Like Me 等现有能力按需复用。
 - 记录独立 Skill 测试的限制：未确认实际调用成功，因此不作为 Learning 行为测试结果。
+
+## Recording 行为映射初稿（2026-11-02）
+
+- 根据已经确认的 Recording 原则、实际 Notion 日记和对话样本，新增 `docs/recording-behavior-mapping-v0.1.md`。
+- 覆盖思维变化提取、客观记录、正文与附属资料、个人文风、保存位置、反馈迭代和不预设固定模板等行为。
+- 明确 Notion「算法日记｜写作风格与工作流规则」为临时草稿，不作为正式规范；正式规则迁移后再按用户计划移除。
+- 真实文风样本以现有日记和可访问的对话为主，Writing Style 不作为必要依赖。
