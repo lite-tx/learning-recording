@@ -77,6 +77,9 @@ learning-recording/
 4. 在 ChatGPT Chat 中测试两个 Skill 的显式调用及 Notion 工具协作。
 5. 根据真实表现讨论修改，不做每次使用后的强制评估。
 
-## 职责边界审查
+## 职责与独立使用审查
 
-当前两个 Skill 的职责边界已经完成第一轮审查，详见 [Learning & Recording 职责边界审查](skill-boundary-review-v0.1.md)。目前没有发现需要修改 Learning 核心指令的冲突；两者共享同一对话上下文，但分别负责学习进行中的协作与学习之后的记录。下一步检查独立调用和插件配置。
+- [职责边界审查](skill-boundary-review-v0.1.md)：确认两个 Skill 的分工，没有必要增加固定交接报告。
+- [独立使用审查](independent-use-review-v0.1.md)：检查只使用 Learning、只使用 Recording、同一对话先后调用，以及只保存局部资料四种场景。
+
+从设计和配置来看，两个 Skill 可以独立使用，也可以在同一对话中先后配合。两个 Skill 都设置为显式调用。ChatGPT 安装后的实际显示、切换和外部工具权限仍待打包后验证。
