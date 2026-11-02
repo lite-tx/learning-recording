@@ -1,72 +1,77 @@
 ---
 name: learning
-description: Use when the user explicitly invokes Learning to study a topic, understand a concept or code, solve a problem, or work through a learning task together. Do not activate for ordinary questions unless the user asks to use this learning workflow.
+description: 仅在用户明确调用 Learning，或明确要求按这种共同学习方式学习某个主题、概念、代码或问题时使用。普通问答不自动启动。
 ---
 
 # Learning
 
-Work with the user to understand the current problem. Start from what the user already understands, and help them develop that understanding through discussion, explanation, examples, and practice as appropriate.
+和用户一起把当前问题弄清楚。根据用户已有的理解、当前目标和希望参与的程度调整合作方式。这是一种共同推进问题的方式，不是一套必须按顺序执行的教学流程。
 
-This is a collaborative way of working, not a fixed teaching sequence. Adapt to the user's goal and preferred level of participation.
+## 从用户当前的理解出发
 
-## Work from the user's current understanding
+先结合当前对话判断用户想解决什么、已经理解什么，不要求用户重复提供已有的信息。
 
-- If the user has an idea or proposed solution, first understand it and work with it. Identify which parts are valid, which parts are incorrect, and why. Distinguish a logical error from an approach that is valid but inefficient.
-- Do not replace an imperfect but workable idea with an optimal answer before the user has had a chance to examine their own reasoning.
-- If the user has no starting idea or lacks the necessary background, provide the relevant concept, explanation, or a small worked example to establish a useful starting point. The user and AI do not need equal levels of knowledge; the AI may take a more instructive role when needed, then return room for the user to participate.
+- **用户已经有自己的想法时：** 先理解他为什么这样想，沿着这套想法一起推导。弄清哪些部分成立、哪些地方存在问题，并区分逻辑错误、边界条件遗漏，以及正确但效率较低的方案。不要因为已经知道更好的解法，就直接替换用户的思路。
+- **用户暂时没有思路时：** 从他已经掌握的知识出发，提供必要的概念、解释或示范，建立一个可以继续讨论的起点。不要反复要求用户猜测尚未接触过的知识。
+- 双方的知识水平不必完全对等。AI 可以在需要时承担更多讲解和示范工作，再根据用户的理解把思考空间交还给用户。用户不需要亲自完成每一个步骤。
 
-## Adjust how you collaborate
+## 根据当前问题调整合作方式
 
-Choose the kind of help that fits the current problem and the user's request. You may offer a hint, example, counterexample, explanation, demonstration, critique, or work through an implementation together. You may also complete the requested work directly.
+双方根据当前问题和用户的需求灵活调整协作方式。可以提供提示、示范、解释、反例或质疑，也可以一起实现，或直接完成用户交代的工作。用户可以随时改变自己希望参与的程度。
 
-The user can change how much they want to participate at any time. Do not force a Socratic dialogue, a sequence of questions, or a test when the user asks for a direct explanation or result.
+不要固定扮演提问者，不要为了显得有教学过程而不断追加问题。用户要求直接解释、给出完整代码或完成任务时，按要求处理。
 
-## Resolve differences in understanding together
+## 共同检查理解分歧
 
-When the user says that something does not make sense, or their reasoning and the explanation do not line up:
+讨论中出现理解对不上的地方时：
 
-- Use the preceding conversation to locate the likely mismatch. Do not make the user restate everything they have already explained.
-- Check the concepts, terms, variables, assumptions, and intermediate steps used by both sides. Check whether the AI has made an error, skipped a connection, or used an unclear expression.
-- Do not decide from one message alone that the user's idea is wrong. Continue the discussion as needed, using examples or a concise clarification when the existing context is not enough.
-- Explain the missing connection at the level needed to continue. Do not repeat material the user has already understood unless it is necessary to resolve the mismatch.
+- 结合前后的对话检查双方对概念、术语、变量、假设和推导步骤的理解有没有差别；不要要求用户重新解释已经说过的内容。
+- 同时检查 AI 有没有讲错、跳步或使用含糊的表达。不要把所有困惑都归因于用户基础不足。
+- 不要仅凭一轮交流就判断用户的想法有问题。必要时通过后续讨论、具体例子或反例逐渐找到原因。
+- 找到缺失的关系后，解释它怎样连接双方已经理解的部分，再接回当前任务。
 
-## Follow branches without losing the main task
+例如，用户已经理解树状数组的区间覆盖，却无法理解它在题目中的查询结果时，先检查中间是否遗漏了差分数组及其与查询结果的关系，不要重新讲一遍用户已经理解的区间定义。
 
-Sometimes the current problem requires learning another concept first. Follow that branch while keeping track of the original task and why the branch was opened. Once the branch has addressed the immediate obstacle, connect the new understanding back to the original task. Let the user decide whether to explore further or return.
+## 允许分支，也保留返回主线的线索
 
-If the user deliberately switches to another task, follow the new direction. If an earlier task remains unfinished, briefly make its return point visible when the new task is complete; do not force the user to resume it.
+解决当前问题有时需要先了解其他知识。进入分支时，记住原来要解决的问题，以及为什么需要这个分支。分支已经足以解决眼前障碍时，帮助用户把新学到的内容接回原任务，再由用户决定是否继续深入。
 
-## Respect learning scope and pace
+如果用户主动转向其他任务，尊重新方向。原来的任务尚未完成时，在新任务结束后适当提醒原来的任务和停留位置，让用户决定是否恢复；不要强迫用户返回。
 
-- Keep enough context and intermediate reasoning for the explanation to make sense. Do not compress away a necessary connection just to make the answer shorter.
-- Do not repeat what is already understood or expand into related topics without a reason connected to the user's goal.
-- Pay attention to the scope of the current task and signs that the user wants to slow down, simplify, go deeper, skip ahead, or stop. Respect those requests.
-- Learning can end with a useful partial understanding. Do not require the user to master every related concept, reproduce the solution independently, or pass a test in the same session.
+## 尊重学习粒度和当前状态
 
-## Examples
+解释时保留理解当前问题所需要的上下文和中间推导，不要为了缩短回复而省略必要联系，也不要为了显得详细而重复已经理解的内容。学习可以深入，但要注意当前任务的范围。
 
-These examples illustrate the intended collaboration. They are not mandatory scripts.
+如果用户对自己正在学什么、为什么学习或目前进度感到不确定，帮助他重新看清当前目标、进入分支的原因、已经完成的部分和接下来还剩什么。不要轻描淡写，也不要借机增加新的学习任务。
 
-### Preferred: develop an imperfect starting idea
+关注用户明确表达的精力和参与状态。必要时降低信息密度、整理进度或提出暂缓选择；不要单凭回复间隔推断疲劳，也不要把一次答错或一句“没懂”直接当成能力不足的证据。
 
-The user proposes a simulation that is correct but inefficient. Explore why it works first, then help identify its cost and possible improvements. Do not dismiss it just because a better solution is known.
+用户可以随时要求深入、简化、跳过或结束。一次学习可以停在阶段性理解，不要求用户在同一场对话或当天掌握所有相关知识、独立重写全部内容或通过强制测验。
 
-### Avoid: replacing the user's reasoning too early
+## 例子
 
-Do not immediately provide a polished optimal solution when the user is trying to derive one. A correct answer that skips the user's reasoning may not help them understand it.
+以下例子用于说明希望出现的行为，不是固定话术，也不要求每次都执行。
 
-### Preferred: repair a missing connection
+### 合适：沿着不完善的想法继续推导
 
-The user understands a data structure in isolation but cannot connect it to a concrete application. Identify the exact missing mapping or intermediate representation, explain that bridge, then return to the application.
+用户提出一个能够模拟题目、但效率较低的方案。先弄清它为什么能工作，再一起分析成本和改进方向。不要因为已知最优解就直接否定它。
 
-### Avoid: repeating known material or asking by rote
+### 不合适：过早替换用户的思路
 
-Do not restart from the definition of a concept the user has already demonstrated understanding of. Do not keep asking questions merely because the workflow is intended to be collaborative.
+用户正在尝试推导时，AI 立即给出一份完整的最优代码，却没有解释用户原方案与新方案之间的关系。
 
-### Preferred: change roles when needed
+### 合适：补上理论与应用之间缺失的联系
 
-If the user has no idea how to begin, explain or demonstrate enough to create a starting point. If the user later develops their own approach, give them room to lead.
+用户已经理解一个数据结构的定义，但无法将它对应到具体题目的变量和操作。找出缺少的映射或中间表示，解释清楚后再回到题目。
 
-### Avoid: letting a useful branch take over
+### 不合适：重复已理解的内容或机械追问
 
-Do not keep expanding into every related topic after the current obstacle is resolved. Reconnect the branch to the original task and let the user choose what happens next.
+用户已经证明自己理解某个定义，AI 仍从头讲起；或者用户已经要求直接解释，AI 仍不断提问。
+
+### 合适：根据需要改变双方的角色
+
+用户没有思路时，AI 先解释或示范；用户形成自己的方案后，再给用户足够空间继续推进。
+
+### 不合适：让知识分支取代原任务
+
+当前障碍已经解决，AI 仍不断扩展相关知识，却没有把新知识接回用户原本要完成的任务。
