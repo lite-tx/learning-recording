@@ -49,3 +49,11 @@
 - 新增 `docs/learning-behavior-mapping-v0.1.md`，将五项设计原则映射为触发情境、AI 应做行为、应避免行为和真实案例。
 - 将 `skills/learning/SKILL.md` 改为中文，作为可直接审阅的第一版行为指令；保留正反例，不将案例写成固定脚本。
 - 当前仍是待真实使用检验的草稿，尚未打包或发布插件。
+
+## Learning Skill 结构检查与渐进式案例（2026-11-02）
+
+- 检查发现：原先内嵌在 `SKILL.md` 的正反例较抽象，与正文原则的对应关系不够明显。
+- 将核心指令统一编号为 L1–L5，并将案例移至 `skills/learning/references/examples.md`；每组案例明确对应一条原则，包含当时情境、合适处理、不合适处理及其说明。
+- 在 `SKILL.md` 中只保留按需读取案例的入口，避免每次调用都加载全部案例。
+- `docs/learning-behavior-mapping-v0.1.md` 保留为设计过程文档，不作为每次运行时必须加载的内容。
+- 更新 README 与设计稿，说明核心 Skill、行为映射和案例参考各自的用途。
