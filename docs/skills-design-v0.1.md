@@ -38,7 +38,8 @@
 - Learning 的原则已整理为中文 `SKILL.md` 初稿，并建立独立的行为映射和按需加载案例。
 - Recording 的主要原则已完成第一轮审查，现已建立 [Recording 行为映射](recording-behavior-mapping-v0.1.md)，用于把记录原则转换为具体情境和行为。
 - Notion 中的「算法日记｜写作风格与工作流规则」是用户创建的临时草稿，不是正式规范；正式 Recording 规则完成迁移后，再按用户计划移除。
-- 下一步根据行为映射编写 Recording 的中文 `SKILL.md`，再整理配套案例。
+- Recording 已根据行为映射建立中文 `SKILL.md` 初稿，并将具体正反案例放入独立的 `references/examples.md`，供按需读取。
+- 当前两份 Skill 均为待整合和实际使用验证的草稿，尚未打包或发布插件。
 ### 来历
 
 根据 [思想底稿](thesis-v0.md)、[真实案例](case-studies.md) 和 [设计实验记录](experiments.md) 整理。历史案例只提供初步经验，不能当成正式效果证明。
