@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "learning-recording",
+  "version": "0.1.0",
+  "description": "通过两个可主动调用的 Skill，陪伴用户共同学习，并将学习过程整理为个人记录。",
+  "author": {
+    "name": "lite-tx"
+  },
+  "homepage": "https://github.com/lite-tx/learning-recording",
+  "repository": "https://github.com/lite-tx/learning-recording",
+  "keywords": [
+    "learning",
+    "recording",
+    "education",
+    "personal-notes"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Learning & Recording",
+        "shortDescription": "共同学习与过程记录",
+        "longDescription": "包含 Learning 和 Recording 两个可独立主动调用的 Skill。Learning 帮助用户从自己的理解出发，通过讨论、解释和推导弄清当前问题；Recording 根据真实的学习过程整理个人笔记，保留思路变化，方便未来重新理解。两个 Skill 可以独立使用，也可以在同一对话中先后配合。Notion 等外部工具需要用户在 ChatGPT 中另行连接。",
+        "developerName": "lite-tx",
+        "category": "Education & Research",
+        "capabilities": [],
+        "defaultPrompt": [
+          "和我一起研究当前问题。",
+          "帮我整理这次学习过程。"
+        ]
+      }
+    }
+  }
+}
